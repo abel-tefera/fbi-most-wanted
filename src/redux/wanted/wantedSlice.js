@@ -6,7 +6,7 @@ const initialState = {
   wantedList: [],
   status: 'idle',
   current: null,
-  subjects: [],
+  filtered: null,
   error: null,
 };
 
@@ -26,6 +26,16 @@ export const wantedSlice = createSlice({
         ({ wanted_id }) => wanted_id.toString() === action.payload.toString(),
       );
       state.current = single;
+    },
+    searchWanted: (state, action) => {
+      console.log('Xdsadsa');
+
+      if (action.payload !== '' && action.payload !== null) {
+        const wanted = state.wantedList.filter(({ title }) => title.includes(action.payload.toUpperCase()));
+        state.filtered = wanted;
+      } else {
+        state.filtered = null;
+      }
     },
   },
   extraReducers(builder) {
@@ -79,11 +89,12 @@ export const wantedSlice = createSlice({
 });
 
 export const selectAllWanted = (state) => state.wanted.wantedList;
-export const selectAllSubjects = (state) => state.wanted.subjects;
+export const selectFiltered = (state) => state.wanted.filtered;
 export const selectCurrentWanted = (state) => state.wanted.current;
 export const getWantedStatus = (state) => state.wanted.status;
 export const getWantedError = (state) => state.wanted.error;
 
 export const { getSingleWanted } = wantedSlice.actions;
+export const { searchWanted } = wantedSlice.actions;
 
 export default wantedSlice.reducer;
