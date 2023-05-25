@@ -32,7 +32,7 @@ const WantedList = () => {
         </div>
       </div>
       <div className="flex w-full bg-custom-blue-dark justify-start px-2">
-        <p className="text-xs font-medium text-white">STATS BY REWARD</p>
+        <p className="text-xs font-medium text-white">REWARDS FOR INFORMATION</p>
       </div>
       <div className="flex flex-wrap justify-center items-center w-full">
         {status === 'succeeded'

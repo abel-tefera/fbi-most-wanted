@@ -18,7 +18,7 @@ const Header = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="white"
-              className="w-4 h-4 absolute md:ml-16"
+              className="w-4 h-4 absolute md:ml-16 ml-2"
               style={{ top: '2px', left: '2px' }}
             >
               <path
