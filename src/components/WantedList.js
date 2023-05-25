@@ -23,12 +23,12 @@ const WantedList = () => {
   }, [status, dispatch]);
 
   return (
-    <div className="flex flex-col items-center">
-      <div className="w-full p-6 flex items-center text-left justify-evenly bg-custom-blue-normal">
+    <div className="flex flex-col items-center font-lato">
+      <div className="w-full p-6 flex items-center text-left justify-evenly md:justify-center bg-custom-blue-normal">
         <img alt="FBI Logo" src={fbiLogo} className="w-1/2 w-48" />
         <div className="flex flex-col">
-          <span className="text-4xl font-extrabold text-white">FBI</span>
-          <span className="text-base text-white">Most Wanted</span>
+          <span className="text-6xl font-extrabold text-white md:text-8xl">FBI</span>
+          <span className="text-2xl md:text-4xl text-white">Most Wanted</span>
         </div>
       </div>
       <div className="flex w-full bg-custom-blue-dark justify-start px-2">

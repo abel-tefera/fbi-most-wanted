@@ -6,7 +6,7 @@ const Wanted = ({ wanted }) => (
     <div className="w-1/2 md:w-1/5">
       <NavLink to={`wanted?id=${wanted.wanted_id}`}>
         <div
-          className="h-48 text-right items-end overflow-hidden flex flex-col text-white justify-end pr-2"
+          className="h-48 text-right items-end overflow-hidden flex flex-col text-white justify-end pr-2 font-lato"
           style={{
             background: `linear-gradient(
           rgba(0, 0, 0, 0.3), 

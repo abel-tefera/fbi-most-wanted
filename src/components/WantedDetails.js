@@ -25,7 +25,7 @@ const WantedDetails = () => {
   }, [dispatch, wantedData, wantedId]);
 
   return (
-    <div className="flex justify-center bg-custom-blue-normal text-white min-h-screen">
+    <div className="flex justify-center bg-custom-blue-normal text-white font-gillSans mb-6">
       {current !== null && (
         <div className="flex flex-col sm:w-2/3 md:w-1/2">
           <div className="flex items-center text-left justify-around bg-custom-blue-light">
