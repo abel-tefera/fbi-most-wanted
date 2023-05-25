@@ -4,10 +4,10 @@ import {
   fetchWanted,
   getWantedError,
   getWantedStatus,
-  selectAllSubjects,
   selectAllWanted,
 } from '../redux/wanted/wantedSlice';
 import Wanted from './Wanted';
+import fbiLogo from '../assets/fbi-logo.png';
 
 const WantedList = () => {
   const dispatch = useDispatch();
@@ -23,8 +23,18 @@ const WantedList = () => {
   }, [status, dispatch]);
 
   return (
-    <div className="container">
-      <div className="flex flex-wrap justify-center items-start">
+    <div className="flex flex-col items-center">
+      <div className="w-full p-6 flex items-center text-left justify-evenly bg-custom-blue-normal">
+        <img alt="FBI Logo" src={fbiLogo} className="w-1/2 w-48" />
+        <div className="flex flex-col">
+          <span className="text-4xl font-extrabold text-white">FBI</span>
+          <span className="text-base text-white">Most Wanted</span>
+        </div>
+      </div>
+      <div className="flex w-full bg-custom-blue-dark justify-start px-2">
+        <p className="text-xs font-medium text-white">STATS BY REWARD</p>
+      </div>
+      <div className="flex flex-wrap justify-center items-center w-full">
         {status === 'succeeded'
           && wantedData.map((wanted) => <Wanted wanted={wanted} />)}
       </div>
