@@ -63,25 +63,12 @@ export const wantedSlice = createSlice({
             warning_message: wanted.warning_message,
             weight: wanted.weight,
             wanted_id: wanted.uid,
-            wantedFor: wanted.description.split(';'),
+            description: wanted.description,
           })))
           .flat()
-          .filter(({ reward_max }) => reward_max > 0)
-          .sort((a, b) => b.reward_max - a.reward_max);
-        console.log('XX', wanted);
-        // const wanted = action.payload.items.filter((wanted) => ).map((wanted, i) => {
-        //   const subject = wanted.subjects[0];
-        //   if (subjects[`"${subject}"`]) {
-        //     subjects[subject] += 1;
-        //   } else {
-        //     subjects[subject] = 0;
-        //   }
-        //   return {
-        //     ...wanted,
-        //     wanted_id: i,
-        //     wantedFor: wanted.description.split(';'),
-        //   };
-        // });
+          .filter(({ reward_max }) => reward_max > 0);
+        // .sort((a, b) => b.reward_max - a.reward_max);
+
         state.wantedList = state.wantedList.concat(wanted);
       })
       .addCase(fetchWanted.rejected, (state, action) => {
