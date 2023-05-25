@@ -4,7 +4,11 @@ import { colors as defaultColors } from 'tailwindcss/defaultTheme';
 module.exports = {
   content: ['./public/*.html', './src/**/*.js'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'custom-blue': { normal: '#4369B2', dark: '#2D4573', light: '#5688E4' },
+      },
+    },
   },
   plugins: [],
 };
