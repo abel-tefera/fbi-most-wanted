@@ -28,8 +28,6 @@ export const wantedSlice = createSlice({
       state.current = single;
     },
     searchWanted: (state, action) => {
-      console.log('Xdsadsa');
-
       if (action.payload !== '' && action.payload !== null) {
         const wanted = state.wantedList.filter(({ title }) => title.includes(action.payload.toUpperCase()));
         state.filtered = wanted;

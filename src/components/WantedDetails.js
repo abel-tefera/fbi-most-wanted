@@ -41,7 +41,7 @@ const WantedDetails = () => {
             </div>
           </div>
           <div className="flex w-full bg-custom-blue-dark justify-start px-2">
-            <p className="text-xs font-medium text-white">BREAKDOWN</p>
+            <p className="text-xs font-medium text-white">INTEL</p>
           </div>
           <div className="flex justify-between text-lg md:text-xl p-2">
             <span>Reward</span>
@@ -62,11 +62,6 @@ const WantedDetails = () => {
                 </span>
               </div>
           )}
-          {/* {current.details && (
-            <div className="flex text-justify text-lg md:text-xl py-2">
-              {current.details}
-            </div>
-          )} */}
           {current.subjects && current.subjects.length > 0 && (
             <div className="flex justify-between text-lg md:text-xl p-2">
               <span>Subject</span>
@@ -80,8 +75,13 @@ const WantedDetails = () => {
               <span className="w-4/5 text-justify">{current.description}</span>
             </div>
           )}
+          {current.warning_message && (
+            <div className="text-lg md:text-xl p-2">
+              <span className="text-justify text-white bg-red-600 px-2">{current.warning_message}</span>
+            </div>
+          )}
           {current.reward_text && (
-            <div className="flex justify-between text-lg md:text-xl p-2">
+            <div className=" text-lg md:text-xl p-2">
               <span className="text-justify">{current.reward_text}</span>
             </div>
           )}

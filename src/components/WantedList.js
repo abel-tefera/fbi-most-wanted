@@ -9,7 +9,7 @@ import {
   selectFiltered,
 } from '../redux/wanted/wantedSlice';
 import Wanted from './Wanted';
-import fbiLogo from '../assets/fbi-logo.png';
+import Main from './Main';
 
 const WantedList = () => {
   const dispatch = useDispatch();
@@ -44,15 +44,7 @@ const WantedList = () => {
             onInput={(e) => setSearch(e.target.value)}
           />
         </div>
-        <div className="w-full p-6 flex items-center text-left justify-evenly md:justify-center bg-custom-blue-normal">
-          <img alt="FBI Logo" src={fbiLogo} className="w-1/2 w-48" />
-          <div className="flex flex-col">
-            <span className="text-6xl font-extrabold text-white md:text-8xl">
-              FBI
-            </span>
-            <span className="text-2xl md:text-4xl text-white">Most Wanted</span>
-          </div>
-        </div>
+        <Main />
       </div>
       <div className="flex w-full bg-custom-blue-dark justify-start px-2">
         <p className="text-xs font-medium text-white">

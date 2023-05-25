@@ -31,7 +31,8 @@
     "camelcase": "off",
     "no-console": "off",
     "import/extensions": "off",
-    "react/jsx-key": "off"
+    "react/jsx-key": "off",
+    "max-len": "off"
   },
   "overrides": [
     {
