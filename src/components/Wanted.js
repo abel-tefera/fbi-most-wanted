@@ -24,6 +24,10 @@ const Wanted = ({ wanted }) => (
           <div className="text-gray-900 font-bold text-xl mb-2 capitalize">
             {wanted.title}
           </div>
+          <div className="text-gray-900 font-bold text-base">
+            Max Reward: $
+            {wanted.reward_max + 1}
+          </div>
           <NavLink to={`wanted?id=${wanted.wanted_id}`}>
             <p className="px-2 text-base">More</p>
           </NavLink>

@@ -4,6 +4,7 @@ import {
   fetchWanted,
   getWantedError,
   getWantedStatus,
+  selectAllSubjects,
   selectAllWanted,
 } from '../redux/wanted/wantedSlice';
 import Wanted from './Wanted';
