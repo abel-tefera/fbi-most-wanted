@@ -75,7 +75,6 @@ export const wantedSlice = createSlice({
           })))
           .flat()
           .filter(({ reward_max }) => reward_max > 0);
-        // .sort((a, b) => b.reward_max - a.reward_max);
 
         state.wantedList = state.wantedList.concat(wanted);
       })
