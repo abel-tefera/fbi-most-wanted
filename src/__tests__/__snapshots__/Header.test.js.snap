@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests for header component snapshot for header 1`] = `
+Array [
+  <nav
+    aria-controls="accordion-arrow-icon-body-1"
+    className="flex justify-center w-full bg-custom-blue-dark font-lato items-center"
+  >
+    <p
+      className="text-sm font-semibold italic text-white"
+    >
+      Fidelity, Bravery, Integrity
+    </p>
+  </nav>,
+  <footer
+    className="flex w-full bg-custom-blue-dark justify-center"
+  >
+    <p
+      className="text-sm font-semibold text-white"
+    >
+      Built by Abel
+    </p>
+  </footer>,
+]
+`;
+
+exports[`tests for navigation bar snapshot for header 1`] = `
+Array [
+  <nav
+    aria-controls="accordion-arrow-icon-body-1"
+    className="flex justify-center w-full bg-custom-blue-dark font-lato items-center"
+  >
+    <p
+      className="text-sm font-semibold italic text-white"
+    >
+      Fidelity, Bravery, Integrity
+    </p>
+  </nav>,
+  <footer
+    className="flex w-full bg-custom-blue-dark justify-center"
+  >
+    <p
+      className="text-sm font-semibold text-white"
+    >
+      Built by Abel
+    </p>
+  </footer>,
+]
+`;
