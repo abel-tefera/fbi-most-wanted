@@ -67,7 +67,7 @@
 
 ## Video Presentation <a name="video-presentation"></a>
 
-Click on this [Loom Video](https://www.loom.com/share/e4d0c283b6684e4e8f596ea5a82bf026) to view the video walkthrough of this project
+Click on this [Loom Video](https://www.loom.com/share/451fa2055f8a407397b58c3c4d9b47b7) to view the video walkthrough of this project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -155,6 +155,8 @@ If you like this project feel free to leave comments and contact via given autho
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - I would like to thank Microverse for giving me the opportunity to work on this project.
+
+Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
