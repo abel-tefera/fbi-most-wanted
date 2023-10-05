@@ -11,7 +11,7 @@ const initialState = {
 };
 
 export const fetchWanted = createAsyncThunk('GET_WANTED', async () => Promise.all(
-  Array.from({ length: 48 }, (_, k) => k + 1).map(async (page) => {
+  Array.from({ length: 12 }, (_, k) => k + 1).map(async (page) => {
     const response = await axios.get(`${BASE_URL}`, { params: { page } });
     return response.data;
   }),
